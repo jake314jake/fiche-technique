@@ -1,0 +1,171 @@
+/* -----------------------------
+   Reset & Base
+--------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+  padding: 10px;
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+}
+
+/* -----------------------------
+   Header & Footer
+--------------------------------- */
+header, footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+/* -----------------------------
+   Sections
+--------------------------------- */
+.fiche-section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.fiche-section h2 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 5px;
+}
+
+.fiche-section h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #2980b9;
+}
+
+/* -----------------------------
+   Labels & Inputs
+--------------------------------- */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52,152,219,0.5);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 8px;
+  accent-color: #3498db;
+}
+
+/* -----------------------------
+   Buttons
+--------------------------------- */
+button, input[type="submit"] {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  margin: 5px;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* -----------------------------
+   Form Layout
+--------------------------------- */
+#ficheForm {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Inline checkboxes nicely */
+.fiche-section p, .fiche-section label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.fiche-section input[type="checkbox"],
+.fiche-section input[type="radio"] {
+  margin-right: 6px;
+}
+
+/* -----------------------------
+   Responsive
+--------------------------------- */
+@media (max-width: 600px) {
+  body {
+    padding: 5px;
+  }
+
+  .fiche-section {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="date"] {
+    font-size: 0.95rem;
+    padding: 8px 10px;
+  }
+
+  button {
+    width: 100%;
+    margin: 8px 0;
+  }
+}
