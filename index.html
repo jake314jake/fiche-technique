@@ -15,186 +15,203 @@
 <main>
 <form id="ficheForm">
 
-  <!-- IDENTIFICATION -->
-  <section class="fiche-section">
-    <h2>IDENTIFICATION DU PATIENT</h2>
+<!-- IDENTIFICATION -->
+<section class="fiche-section">
+  <h2>IDENTIFICATION DU PATIENT</h2>
 
-    <div class="grid-2">
-      <div class="form-group">
-        <label>Nom</label>
-        <input type="text" id="nom">
-      </div>
-
-      <div class="form-group">
-        <label>Prénom</label>
-        <input type="text" id="prenom">
-      </div>
-
-      <div class="form-group">
-        <label>Date de naissance</label>
-        <input type="date" id="date_naissance">
-      </div>
-
-      <div class="form-group">
-        <label>Sexe</label>
-        <div class="inline-options">
-          <label class="option">
-            <span>M</span>
-            <input type="radio" name="sexe" value="M">
-          </label>
-          <label class="option">
-            <span>F</span>
-            <input type="radio" name="sexe" value="F">
-          </label>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ANTECEDENTS -->
-  <section class="fiche-section">
-    <h2>ANTÉCÉDENTS</h2>
-
-    <h3>Pédiatriques</h3>
-    <div class="grid-2">
-      <label class="check-row"><span>Prématurité</span><input type="checkbox" id="prematurite"></label>
-      <label class="check-row"><span>Hémorragie intraventriculaire</span><input type="checkbox" id="hemorragie_iv"></label>
-      <label class="check-row"><span>Spina bifida</span><input type="checkbox" id="spina_bifida"></label>
-      <label class="check-row"><span>Méningite</span><input type="checkbox" id="meningite"></label>
-    </div>
-
-    <h3>Adultes</h3>
-    <div class="grid-2">
-      <label class="check-row"><span>Trauma crânien</span><input type="checkbox" id="tc"></label>
-      <label class="check-row"><span>AVC / Hémorragie</span><input type="checkbox" id="avc"></label>
-      <label class="check-row"><span>Tumeur</span><input type="checkbox" id="tumeur"></label>
-      <label class="check-row"><span>Chirurgie antérieure</span><input type="checkbox" id="chirurgie_anterieure"></label>
-    </div>
-  </section>
-
-  <!-- DECOUVERTE -->
-  <section class="fiche-section">
-    <h2>CIRCONSTANCES DE DÉCOUVERTE</h2>
-
-    <div class="grid-2">
-      <label class="check-row"><span>Macrocrânie</span><input type="checkbox" id="macrocranie"></label>
-      <label class="check-row"><span>Céphalées / Vomissements</span><input type="checkbox" id="cephalees"></label>
-      <label class="check-row"><span>Troubles de la marche</span><input type="checkbox" id="troubles_marche"></label>
-      <label class="check-row"><span>Incontinence</span><input type="checkbox" id="incontinence"></label>
-      <label class="check-row"><span>Regard soleil</span><input type="checkbox" id="regard_soleil"></label>
-      <label class="check-row"><span>Fontanelle tendue</span><input type="checkbox" id="fontanelle_tendue"></label>
-      <label class="check-row"><span>Troubles mémoire</span><input type="checkbox" id="troubles_memoire"></label>
-    </div>
-  </section>
-
-  <!-- EXAMEN -->
-  <section class="fiche-section">
-    <h2>EXAMEN CLINIQUE</h2>
-
-    <div class="grid-2">
-      <div class="form-group">
-        <label>Poids (kg)</label>
-        <input type="number" id="poids_kg">
-      </div>
-
-      <div class="form-group">
-        <label>Taille (cm)</label>
-        <input type="number" id="taille_cm">
-      </div>
-
-      <div class="form-group">
-        <label>Périmètre Crânien</label>
-        <input type="number" id="pc_cm">
-      </div>
-
-      <div class="form-group">
-        <label>Score Glasgow</label>
-        <input type="number" id="glasgow">
-      </div>
-
-      <div class="form-group full">
-        <label>Examen neurologique</label>
-        <input type="text" id="examen_neuro">
-      </div>
-    </div>
-  </section>
-
-  <!-- IMAGERIE -->
-  <section class="fiche-section">
-    <h2>IMAGERIE</h2>
-
-    <div class="grid-2">
-      <label class="check-row"><span>Scanner</span><input type="checkbox" id="scanner"></label>
-      <label class="check-row"><span>IRM</span><input type="checkbox" id="irm"></label>
-      <label class="check-row"><span>Échographie</span><input type="checkbox" id="echographie"></label>
+  <div class="grid-2">
+    <div class="form-group">
+      <label>Nom</label>
+      <input type="text" id="nom" placeholder="Nom">
     </div>
 
     <div class="form-group">
-      <label>Indice d'Evans</label>
-      <input type="text" id="indice_evans">
-    </div>
-  </section>
-
-  <!-- BIOLOGIE -->
-  <section class="fiche-section">
-    <h2>BIOLOGIE</h2>
-
-    <div class="grid-2">
-      <div class="form-group"><label>Glycémie</label><input type="text" id="glycemie"></div>
-      <div class="form-group"><label>Protéinorachie</label><input type="text" id="proteinorachie"></div>
-      <div class="form-group"><label>Glycorachie</label><input type="text" id="glycorachie"></div>
-      <div class="form-group"><label>Cytologie</label><input type="text" id="cytologie_lcr"></div>
-      <div class="form-group full"><label>Culture</label><input type="text" id="culture_lcr"></div>
-    </div>
-  </section>
-
-  <!-- EVOLUTION -->
-  <section class="fiche-section">
-    <h2>PRISE EN CHARGE</h2>
-
-    <div class="grid-2">
-      <label class="check-row"><span>DVP</span><input type="checkbox" id="dvp"></label>
-      <label class="check-row"><span>DVA</span><input type="checkbox" id="dva"></label>
-      <label class="check-row"><span>Endoscopie</span><input type="checkbox" id="vcs"></label>
+      <label>Prénom</label>
+      <input type="text" id="prenom" placeholder="Prénom">
     </div>
 
-    <div class="grid-2">
-      <div class="form-group">
-        <label>Date intervention</label>
-        <input type="date" id="date_intervention">
-      </div>
+    <div class="form-group">
+      <label>Date de naissance</label>
+      <input type="date" id="date_naissance">
+    </div>
 
-      <div class="form-group">
-        <label>Type valve</label>
-        <input type="text" id="type_valve">
-      </div>
-
-      <div class="form-group">
-        <label>Dernière consultation</label>
-        <input type="date" id="date_derniere_consultation">
+    <div class="form-group">
+      <label>Sexe</label>
+      <div class="inline-options">
+        <label class="option">
+          <span>M</span>
+          <input type="radio" name="sexe" value="M">
+        </label>
+        <label class="option">
+          <span>F</span>
+          <input type="radio" name="sexe" value="F">
+        </label>
       </div>
     </div>
-
-    <h3>Évolution</h3>
-    <div class="grid-3">
-      <label class="check-row"><span>Favorable</span><input type="checkbox" id="evo_favorable"></label>
-      <label class="check-row"><span>Stable</span><input type="checkbox" id="evo_stable"></label>
-      <label class="check-row"><span>Défavorable</span><input type="checkbox" id="evo_defavorable"></label>
-    </div>
-  </section>
-
-  <!-- ACTIONS -->
-  <div class="actions">
-    <button type="button">📄 Télécharger</button>
-    <button type="reset">♻ Reset</button>
   </div>
+</section>
+
+<hr>
+
+<!-- ANTÉCÉDENTS -->
+<section class="fiche-section">
+  <h2>ANTÉCÉDENTS</h2>
+
+  <h3>Pédiatriques / Néonataux</h3>
+  <div class="grid-2">
+    <label class="check-row"><span>Prématurité</span><input type="checkbox" id="prematurite"></label>
+    <label class="check-row"><span>Hémorragie intraventriculaire</span><input type="checkbox" id="hemorragie_iv"></label>
+    <label class="check-row"><span>Spina bifida</span><input type="checkbox" id="spina_bifida"></label>
+    <label class="check-row"><span>Méningite</span><input type="checkbox" id="meningite"></label>
+  </div>
+
+  <h3>Adultes</h3>
+  <div class="grid-2">
+    <label class="check-row"><span>TC (Trauma Crânien)</span><input type="checkbox" id="tc"></label>
+    <label class="check-row"><span>AVC / Hémorragie méningée</span><input type="checkbox" id="avc"></label>
+    <label class="check-row"><span>Tumeur</span><input type="checkbox" id="tumeur"></label>
+    <label class="check-row"><span>Chirurgie antérieure</span><input type="checkbox" id="chirurgie_anterieure"></label>
+  </div>
+</section>
+
+<hr>
+
+<!-- CIRCONSTANCES -->
+<section class="fiche-section">
+  <h2>CIRCONSTANCES DE DÉCOUVERTE</h2>
+
+  <div class="grid-2">
+    <label class="check-row"><span>Macrocrânie (Nourrisson)</span><input type="checkbox" id="macrocranie"></label>
+    <label class="check-row"><span>Céphalées / Vomissements</span><input type="checkbox" id="cephalees"></label>
+    <label class="check-row"><span>Troubles de la marche</span><input type="checkbox" id="troubles_marche"></label>
+    <label class="check-row"><span>Incontinence</span><input type="checkbox" id="incontinence"></label>
+    <label class="check-row"><span>Regard en coucher de soleil</span><input type="checkbox" id="regard_soleil"></label>
+    <label class="check-row"><span>Fontanelle tendue</span><input type="checkbox" id="fontanelle_tendue"></label>
+    <label class="check-row"><span>Troubles cognitifs / Mémoire</span><input type="checkbox" id="troubles_memoire"></label>
+  </div>
+</section>
+
+<hr>
+
+<!-- EXAMEN -->
+<section class="fiche-section">
+  <h2>EXAMEN CLINIQUE</h2>
+
+  <div class="grid-2">
+    <div class="form-group">
+      <label>Poids (kg)</label>
+      <input type="number" id="poids_kg" placeholder="kg">
+    </div>
+
+    <div class="form-group">
+      <label>Taille (cm)</label>
+      <input type="number" id="taille_cm" placeholder="cm">
+    </div>
+
+    <div class="form-group">
+      <label>Périmètre Crânien (PC)</label>
+      <input type="number" id="pc_cm" placeholder="cm">
+    </div>
+
+    <div class="form-group">
+      <label>Score de Glasgow</label>
+      <input type="number" id="glasgow" min="3" max="15">
+    </div>
+
+    <div class="form-group full">
+      <label>Examen Neurologique</label>
+      <input type="text" id="examen_neuro">
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<!-- IMAGERIE -->
+<section class="fiche-section">
+  <h2>IMAGERIE</h2>
+
+  <div class="grid-2">
+    <label class="check-row"><span>Scanner cérébral (TDM)</span><input type="checkbox" id="scanner"></label>
+    <label class="check-row"><span>IRM cérébrale</span><input type="checkbox" id="irm"></label>
+    <label class="check-row"><span>Échographie (ETF)</span><input type="checkbox" id="echographie"></label>
+  </div>
+
+  <div class="form-group">
+    <label>Commentaires / Indice d'Evans</label>
+    <input type="text" id="indice_evans">
+  </div>
+</section>
+
+<hr>
+
+<!-- BIOLOGIE -->
+<section class="fiche-section">
+  <h2>BIOLOGIE</h2>
+
+  <div class="grid-2">
+    <div class="form-group"><label>Glycémie</label><input type="text" id="glycemie"></div>
+    <div class="form-group"><label>LCR - Protéinorachie</label><input type="text" id="proteinorachie"></div>
+    <div class="form-group"><label>LCR - Glycorachie</label><input type="text" id="glycorachie"></div>
+    <div class="form-group"><label>LCR - Cytologie</label><input type="text" id="cytologie_lcr"></div>
+    <div class="form-group full"><label>LCR - Culture</label><input type="text" id="culture_lcr"></div>
+  </div>
+</section>
+
+<hr>
+
+<!-- PRISE EN CHARGE -->
+<section class="fiche-section">
+  <h2>PRISE EN CHARGE ET ÉVOLUTION</h2>
+
+  <h3>Intervention</h3>
+  <div class="grid-3">
+    <label class="check-row"><span>DVP</span><input type="checkbox" id="dvp"></label>
+    <label class="check-row"><span>DVA</span><input type="checkbox" id="dva"></label>
+    <label class="check-row"><span>VCS (Endoscopie)</span><input type="checkbox" id="vcs"></label>
+  </div>
+
+  <div class="grid-2">
+    <div class="form-group">
+      <label>Date d'intervention</label>
+      <input type="date" id="date_intervention">
+    </div>
+
+    <div class="form-group">
+      <label>Type de valve</label>
+      <input type="text" id="type_valve">
+    </div>
+  </div>
+
+  <h3>Évolution</h3>
+  <div class="grid-3">
+    <label class="check-row"><span>Favorable</span><input type="checkbox" id="evo_favorable"></label>
+    <label class="check-row"><span>Stable</span><input type="checkbox" id="evo_stable"></label>
+    <label class="check-row"><span>Défavorable</span><input type="checkbox" id="evo_defavorable"></label>
+  </div>
+
+  <div class="form-group">
+    <label>Date dernière consultation</label>
+    <input type="date" id="date_derniere_consultation">
+  </div>
+</section>
+
+<hr>
+
+<!-- BUTTONS -->
+<div class="actions">
+  <button type="button" id="generateFiche">Télécharger la fiche</button>
+  <button type="reset">Réinitialiser</button>
+</div>
 
 </form>
 </main>
 
 <footer>
-  <p>&copy; 2026 Fiche Technique</p>
+  <p>&copy; 2026 Fiche Technique Hydrocéphalie</p>
 </footer>
+
+<script src="app.js"></script>
 
 </body>
 </html>
