@@ -184,6 +184,59 @@ button[type="reset"]:hover {
   background: #95a5a6;
 }
 
+
+/* ACTIONS CONTAINER */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+/* BUTTON BASE */
+.actions button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+
+  font-size: 0.95rem;
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+/* DOWNLOAD BUTTON */
+#generateFiche {
+  background: #3498db;
+  color: white;
+}
+
+#generateFiche:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* RESET BUTTON */
+.actions button[type="reset"] {
+  background: #ecf0f1;
+  color: #555;
+}
+
+.actions button[type="reset"]:hover {
+  background: #d0d7de;
+  transform: translateY(-2px);
+}
+
+/* ICON STYLE */
+.actions button span {
+  font-size: 1.1rem;
+}
+
 /* -----------------------------
    RESPONSIVE
 --------------------------------- */
